@@ -1,0 +1,22 @@
+<div class="container mt-5">
+    <div class="row">
+        {{#each CRUD}}
+        <div class="col-sm-6 col-lg-3 mt-3">
+            <div class="card">
+                <div>
+                    <a href="">
+                        <img src="{{this.img}}" class="card-img-top" alt="..." style="height: 200px;">
+                    </a>
+                </div>
+                <div class="card-body">
+                    <a href="">
+                        <h5 class="card-title"><a href="/detail/{{this._id}}">{{this.name}}</a></h5>
+                    </a>
+                    <p class="card-text">{{this.des}}</p>
+                    <a href="#" class="btn btn-primary">By</a>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
